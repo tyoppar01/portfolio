@@ -9,34 +9,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap + Typed.js</title>
+    <title>kaileaw-portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
+
   <body>
-    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <!-- Navigation Bar -->
+    <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
         <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="#">Certifications</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
 
+    <!-- Navigation Icon -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <button
@@ -53,20 +60,66 @@
       </div>
     </nav>
 
+    <!-- Typed Text Intro -->
     <div class="container mt-5 text-center">
-      <h1 class="typed-text display-4 text-primary"></h1>
+      <h1><span class="typed-text"></span></h1>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
+    <!-- Contact Section -->
+    <div id="contact-section" class="sub-heading">
+      <h2 class="text-center">Contact</h2>
+      <div class="row justify-content-center">
+        
+        <!-- Contact List -->
+        <div class="col-12">
+          <ul class="list-unstyled d-flex justify-content-center">
+
+            <!-- Email -->
+            <li class="d-flex align-items-center mb-3">
+              <a href="mailto:jayaw5508@gmail.com" class="social-icon">
+                <i class="bi bi-envelope"></i></a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li class="d-flex align-items-center mb-3">
+              <a href="https://www.linkedin.com/in/kai-le-aw/" class="social-icon" >
+                <i class="bi bi-linkedin"></i> </a>
+            </li>
+
+            <!-- GitHub -->
+            <li class="d-flex align-items-center mb-3">
+              <a href="https://github.com/tyoppar01" class="social-icon">
+                <i class="bi bi-github"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
     <script>
-      const title = ["Kai Le Aw", "Software Engineer", "Monash CS"];
+      const titles = ["Kai Le Aw", "Software Engineer", "Monash CS"];
       document.addEventListener("DOMContentLoaded", function () {
         new Typed(".typed-text", {
-          strings: title,
+          strings: titles,
           typeSpeed: 100,
-          backSpeed: 50,
+          backSpeed: 40,
           loop: true,
+        });
+      });
+    </script>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          const collapse = document.getElementById(
+            "navbarToggleExternalContent"
+          );
+          const bootstrapCollapse = new bootstrap.Collapse(collapse, {
+            toggle: false,
+          });
+          bootstrapCollapse.hide();
         });
       });
     </script>
