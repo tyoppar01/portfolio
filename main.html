@@ -98,30 +98,18 @@
     </div>
     <div class="spacer-section"></div>
 
-    <!-- About Me -->
-    <div id="about-section" class="section">
-      <h2 id="about-header" class="section-title-header"> About</h2>
+    <!-- WorkExp -->
+    <div id="exp-section" class="section">
+      <h2 id="exp-header" class="section-title-header">Work Experience</h2>
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <p>
-            I am <b>Jasper</b>, a graduate with a degree in <b>Computer Science</b> from <b>Monash University Malaysia</b>. 
-            I have developed strong expertise in <b>Software Engineering</b>, <b>Data Structures and Algorithms</b>, 
-            and <b>Backend Engineering</b>. These skills enable me to design efficient systems and build scalable 
-            solutions that address real-world challenges.
-          </p><br>
-          <p>
-            Passionate about continuous learning, I stay at the forefront of emerging technologies and trends, ensuring that my work remains both innovative and impactful. 
-            I continuously enhance my knowledge through additional courses and am currently challenging myself in advanced <b>Cloud Computing</b>.
-          </p><br>
-          <p  class="text-center">
-            << Guided by the motto <b>"Fail fast, learn fast"</b>, I embrace challenges as opportunities to grow. >>
-          </p>
+
         </div>
       </div>
       <div id="about-space" class="small-spacer-section"></div>
         <!-- arrow  -->
         <div class="my-3">
-          <a href="#exp-section" class="scroll-to-about">
+          <a href="#contact-section" class="scroll-to-about">
             <i class="bi bi-arrow-down-circle" style="font-size: 40px; color: #3498db;"></i>
           </a>
         </div>
@@ -130,30 +118,47 @@
 
     <!-- Contact -->
     <div id="contact-section" class="section">
-      <h2 id="contact-header" class="section-title-header-contact"><span class="contact-text"></span></h2>
+      <h2 id="contact-header" class="section-title-header-contact">
+        <span class="contact-text"></span>
+      </h2>
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-
+          
+          <!-- Social Icons -->
           <div class="col-12">
             <ul class="list-unstyled d-flex justify-content-center">
-    
               <li class="d-flex align-items-center mb-3">
                 <a href="mailto:jayaw5508@gmail.com" class="social-icon">
-                  <i class="bi bi-envelope"></i></a>
+                  <i class="bi bi-envelope"></i>
+                </a>
               </li>
-    
               <li class="d-flex align-items-center mb-3">
                 <a href="https://www.linkedin.com/in/kai-le-aw/" class="social-icon">
-                  <i class="bi bi-linkedin"></i></a>
+                  <i class="bi bi-linkedin"></i>
+                </a>
               </li>
-  
               <li class="d-flex align-items-center mb-3">
                 <a href="https://github.com/tyoppar01" class="social-icon">
-                  <i class="bi bi-github"></i></a>
+                  <i class="bi bi-github"></i>
+                </a>
               </li>
-              
             </ul>
           </div>
+
+          <!-- Contact Form -->
+          <form action="mailto:jayaw5508@gmail.com" method="post" enctype="text/plain" class="mt-4">
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <p><b>email service still in progress...</b></p>
+            <button type="submit" class="btn btn-primary disabled">Send</button>
+          </form>
 
         </div>
       </div>
