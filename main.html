@@ -32,7 +32,6 @@
       </div>
     </div>
   
-    <!-- Navigation Icon -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button"
@@ -40,9 +39,13 @@
           data-bs-target="#navbarToggleExternalContent"
           aria-controls="navbarToggleExternalContent"
           aria-expanded="false"
-          aria-label="Toggle navigation" >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      
+        <a href="mailto:jayaw5508@gmail.com" class="ms-auto text-white" style="text-decoration: none;">
+          <i class="bi bi-envelope" style="font-size: 24px;"></i>
+        </a>
       </div>
     </nav>
   
@@ -96,7 +99,7 @@
       </div>
         <!-- arrow  -->
         <div class="my-3">
-          <a href="#exp-section" class="scroll-to-about">
+          <a href="#work-section" class="scroll-to-about">
             <i class="bi bi-arrow-down-circle" style="font-size: 40px; color: #3498db;"></i>
           </a>
         </div>
@@ -273,7 +276,7 @@
 
 
     <script>
-      const titleArr = ["Kai Le Aw", "Software Engineer", "Monash CS", "Kuala Lumpur (MY)"];
+      const titleArr = ["Kai Le Aw", "Software Engineer", "Monash CS"];
       document.addEventListener("DOMContentLoaded", function () {
         new Typed(".typed-text", {
           strings: titleArr,typeSpeed: 80,backSpeed: 30,loop: true,
@@ -282,7 +285,7 @@
     </script>
 
     <script>
-      const connectArr = ["Contact?", "Connect?", "Click It"];
+      const connectArr = ["Contact?", "Connect?", "Click It and let's connect!"];
       document.addEventListener("DOMContentLoaded", function () {
         new Typed(".contact-text", {
           strings: connectArr,typeSpeed: 150,backSpeed: 100,loop: true,
@@ -305,15 +308,12 @@
       });
     </script>
 
-    
     <script>
       const aboutSection = document.getElementById("about-section");
-
       function isElementInView(el) {
         const rect = el.getBoundingClientRect();
         return (rect.top <= window.innerHeight && rect.bottom >= 0);
       }
-  
       window.addEventListener("scroll", function() {
         if (isElementInView(aboutSection)) {
           aboutSection.classList.add("visible");
