@@ -153,7 +153,7 @@ html {
   padding: 10px; 
   border-radius: 50%;
   color: #333; 
-  font-size: 2rem; 
+  font-size: 3rem; 
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -184,6 +184,12 @@ html {
   background-color: #f8f9fa; /* Optional: light background */
   border-radius: 8px;
   height: 100vh;
+}
+
+.last-section {
+  background-color: #f8f9fa; /* Optional: light background */
+  border-radius: 8px;
+  height: 30vh;
 }
 
 .section-title {
