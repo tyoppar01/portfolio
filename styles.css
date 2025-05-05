@@ -181,13 +181,13 @@ html {
 }
 
 .section {
-  background-color: #f8f9fa; /* Optional: light background */
+  background-color: #f8f9fa; /*  Optional: light background */
   border-radius: 8px;
   height: 100vh;
 }
 
 .last-section {
-  background-color: #f8f9fa; /* Optional: light background */
+  /* background-color: #f8f9fa; /* Optional: light background */
   border-radius: 8px;
   height: 30vh;
 }
