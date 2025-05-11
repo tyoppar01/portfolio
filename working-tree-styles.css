@@ -12,6 +12,18 @@
     margin: 0px auto;
 }
 
+.timeline::after{
+    content:'';
+    position: absolute;
+    width:6px;
+    height:100%;
+    background: #212529;
+    top:0;
+    left:50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
 .container{
     padding: 10px 50px;
     position: relative;
@@ -33,10 +45,14 @@
     right: -20px;
     top:32px;
     z-index: 10;
+    border:3px solid #212529;     
+    object-fit: cover;  
 }
 
 .right-container img{
     left:-20px;
+    border:3px solid #212529;     
+    object-fit: cover;  
 }
 
 .text-box{
@@ -47,7 +63,6 @@
     border-radius: 6px;
     font-size: 15px;
 }
-
 
 .text-box h2{
     font-weight: 600;
@@ -81,21 +96,3 @@
     border-right: 15px solid #212529;
     left: -15px;
 }
-
-.timeline::after{
-    content:'';
-    position: absolute;
-    width:6px;
-    height:100%;
-    background: #212529;
-    top:0;
-    left:50%;
-    margin-left: -3px;
-    z-index: -1;
-}
-
-.circular-icon {
-    border:3px solid #212529;     
-    object-fit: cover;            
-  }
-  
