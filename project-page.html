@@ -1,154 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kaile-project-showcase</title>
-  <link rel="stylesheet" href="project-styles.css">
-</head>
-<body>
-  <div class="project-card hidden">
-    <div class="image-frame">
-      <img src="/project-image/deception-detection-system-screenshot.png" alt="p01-fyp" id="p01-fyp" class="enlarge-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kaile-project-showcase</title>
+    <link rel="stylesheet" href="project-styles.css" />
+  </head>
+  <body>
+    <div class="project-card hidden">
+      <div class="image-frame">
+        <img
+          src="/project-image/deception-detection-system-screenshot.png"
+          alt="p01-fyp"
+          id="p01-fyp"
+          class="enlarge-image"
+        />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Deception Detection System</h2>
+        <p class="project-description">
+          Developed a machine learning–powered web application with a Gradio
+          interface that analyzes facial expressions from uploaded videos to
+          detect deceptive behavior. The system extracts multimodal
+          features—primarily Facial Action Units (FAUs) using the OpenFace
+          model, and predicts the likelihood of deception based on trained
+          models. The output includes both the deception probability and the key
+          FAUs contributing to the prediction.
+        </p>
+        <ul class="skills-used">
+          <li>Python</li>
+          <li>Gradio</li>
+          <li>OpenFace</li>
+          <li>Scikit-Learn</li>
+          <li>Git</li>
+        </ul>
+      </div>
     </div>
-    <div class="project-info">
-      <h2 class="project-title">Deception Detection System</h2>
-      <p class="project-description">
-        Developed a machine learning–powered web application with a Gradio interface that analyzes facial expressions from 
-        uploaded videos to detect deceptive behavior. The system extracts multimodal features—primarily Facial Action Units 
-        (FAUs) using the OpenFace model, and predicts the likelihood of deception based on trained models. 
-        The output includes both the deception probability and the key FAUs contributing to the prediction.     
-      </p>
-      <ul class="skills-used">
-        <li>Python</li>
-        <li>Gradio</li>
-        <li>OpenFace</li>
-        <li>Scikit-Learn</li>
-        <li>Git</li>
-      </ul>
+    <br />
+    <div class="project-card hidden">
+      <div class="image-frame">
+        <img
+          src="/project-image/tetris-game-screenshot.png"
+          alt="p02-tetris"
+          class="enlarge-image"
+        />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Tetris Battle</h2>
+        <p class="project-description">
+          Developed a fully interactive Tetris game using Functional Reactive
+          Programming (FRP) principles in TypeScript, leveraging RxJS
+          Observables to handle user input streams and manage real-time
+          communication between game components through a publisher-subscriber
+          architecture.
+        </p>
+        <ul class="skills-used">
+          <li>Typescript</li>
+          <li>FRP</li>
+          <li>RxJS</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <br>
-  <div class="project-card hidden">
-    <div class="image-frame">
-      <img src="/project-image/tetris-game-screenshot.png" alt="p02-tetris" class="enlarge-image">
+    <br />
+    <div class="project-card hidden">
+      <div class="image-frame">
+        <img
+          src="/project-image/elden-ring-screenshot.png"
+          alt="p03-elden-ring"
+          class="enlarge-image"
+        />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Rogue Game (2D)</h2>
+        <p class="project-description">
+          Designed and implemented a 2D console-based game inspired by Elden
+          Ring using Java and object-oriented programming (OOP) principles. The
+          game features a text-based display and supports user interaction
+          through keyboard controls, showcasing modular design and gameplay
+          logic encapsulated in classes and objects.
+        </p>
+        <ul class="skills-used">
+          <li>Java</li>
+          <li>OOP</li>
+          <li>GitLab</li>
+        </ul>
+      </div>
     </div>
-    <div class="project-info">
-      <h2 class="project-title">Tetris Battle</h2>
-      <p class="project-description">
-        Developed a fully interactive Tetris game using Functional Reactive Programming (FRP) principles in TypeScript, 
-        leveraging RxJS Observables to handle user input streams and manage real-time communication between game 
-        components through a publisher-subscriber architecture.
-      </p>
-      <ul class="skills-used">
-        <li>Typescript</li>
-        <li>FRP</li>
-        <li>RxJS</li>
-      </ul>
+    <br />
+    <div class="project-card hidden">
+      <div class="image-frame">
+        <img
+          src="/project-image/database-logical-diagram.png"
+          alt="p03-elden-ring"
+          class="enlarge-image"
+        />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Vehicle Booking Database System</h2>
+        <p class="project-description">
+          Constructed a relational database management system using MySQL to
+          store the information of the truck vehicle booking business.
+        </p>
+        <ul class="skills-used">
+          <li>MySQL</li>
+          <li>Database modeling</li>
+          <li>Git</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <br>
-  <div class="project-card hidden">
-    <div class="image-frame">
-      <img src="/project-image/elden-ring-screenshot.png" alt="p03-elden-ring" class="enlarge-image">
+    <div id="image-modal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-img" />
     </div>
-    <div class="project-info">
-      <h2 class="project-title">Rogue Game (2D)</h2>
-      <p class="project-description">
-        Designed and implemented a 2D console-based game inspired by Elden Ring using Java and object-oriented programming 
-        (OOP) principles. The game features a text-based display and supports user interaction through keyboard controls, 
-        showcasing modular design and gameplay logic encapsulated in classes and objects.
-      </p>
-      <ul class="skills-used">
-        <li>Java</li>
-        <li>OOP</li>
-        <li>GitLab</li>
-      </ul>
-    </div>
-  </div>
-  <br>
-  <div class="project-card hidden">
-    <div class="image-frame">
-      <img src="/project-image/database-logical-diagram.png" alt="p03-elden-ring" class="enlarge-image">
-    </div>
-    <div class="project-info">
-      <h2 class="project-title">Vehicle Booking Database System</h2>
-      <p class="project-description">
-        Constructed a relational database management system using MySQL to store the information of the 
-        truck vehicle booking business.     
-      </p>
-      <ul class="skills-used">
-        <li>MySQL</li>
-        <li>Database modeling</li>
-        <li>Git</li>
-      </ul>
-    </div>
-  </div>
-  <div id="image-modal" class="modal">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modal-img">
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add('visible');
-            }, 500);
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.project-card').forEach(card => {
-        observer.observe(card);
-      });
-
-      // Enlarge image modal
-      const modal = document.getElementById('image-modal');
-      const modalImg = document.getElementById('modal-img');
-      const closeModal = document.querySelector('.modal-close');
-
-      document.querySelectorAll('.enlarge-image').forEach(img => {
-        img.addEventListener('click', () => {
-          modal.style.display = 'block';
-          modalImg.src = img.src;
-        });
-      });
-
-      closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-      });
-
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    });
-
-    // not in used - below
-
-    const slideshowImages = [
-      "/project-image/deception-detection-system-screenshot.png",
-      "/project-image/deception-detection-system-home-image.png",
-      "/project-image/deception-detection-system-demo-image.png"
-    ];
-
-    let currentIndex = 0;
-    const imgElement = document.getElementById("test");
-
-    setInterval(() => {
-      imgElement.style.opacity = 0;
-      setTimeout(() => {
-        currentIndex = (currentIndex + 1) % slideshowImages.length;
-        imgElement.src = slideshowImages[currentIndex];
-        imgElement.style.opacity = 1;
-      }, 500);
-    }, 3000);
-  </script>
-
-</body>
+    <script src="main-script.js"></script>
+    
+  </body>
 </html>
