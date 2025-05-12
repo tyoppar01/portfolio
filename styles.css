@@ -7,7 +7,7 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
-  padding-top: 80px; 
+  padding-top: 100px; 
 }
 
 /** Typed Text */
@@ -38,7 +38,6 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -157,6 +156,18 @@ iframe {
 
   .section-title-header {
     font-size: 1.5em; /* Adjust title size on smaller screens */
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand, .nav-link {
+    font-size: 14px;
+  }
+
+  body {
+    padding-top: 60px; /* Smaller space if navbar shrinks */
   }
 }
 
