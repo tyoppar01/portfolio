@@ -316,7 +316,7 @@ iframe {
     height: 100%;
     background-color: #212529; 
     transform: translateX(-50%);
-    animation: extendLine 3s infinite ease-in-out;
+    animation: extendLine 5s infinite ease-in-out;
 }
 
 @keyframes extendLine {
