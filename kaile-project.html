@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Showcase</title>
+  <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+  <div class="project-card hidden">
+    <div class="image-frame">
+      <img src="/project-image/deception-detection-system-screenshot.png" alt="p01-fyp" class="enlarge-image">
+    </div>
+    <div class="project-info">
+      <h2 class="project-title">Project Title</h2>
+      <p class="project-description">
+        This is a brief description of the project. It can describe the purpose, the tech used, and any notable features.
+      </p>
+      <ul class="skills-used">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="project-card hidden">
+    <div class="image-frame">
+      <img src="/project-image/tetris-game-screenshot.png" alt="p02-tetris" class="enlarge-image">
+    </div>
+    <div class="project-info">
+      <h2 class="project-title">Project Title</h2>
+      <p class="project-description">
+        This is a brief description of the project. It can describe the purpose, the tech used, and any notable features.
+      </p>
+      <ul class="skills-used">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="project-card hidden">
+    <div class="image-frame">
+      <img src="/project-image/elden-ring-screenshot.png" alt="p03-elden-ring" class="enlarge-image">
+    </div>
+    <div class="project-info">
+      <h2 class="project-title">Project Title</h2>
+      <p class="project-description">
+        This is a brief description of the project. It can describe the purpose, the tech used, and any notable features.
+      </p>
+      <ul class="skills-used">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, 500);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.project-card').forEach(card => {
+        observer.observe(card);
+      });
+
+      // Enlarge image modal
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      const closeModal = document.querySelector('.modal-close');
+
+      document.querySelectorAll('.enlarge-image').forEach(img => {
+        img.addEventListener('click', () => {
+          modal.style.display = 'block';
+          modalImg.src = img.src;
+        });
+      });
+
+      closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
