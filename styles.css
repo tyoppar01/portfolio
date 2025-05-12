@@ -16,6 +16,8 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  flex-direction: column;
+  text-align: center;
 }
 
 .navbar a.nav-link {
@@ -103,7 +105,7 @@ body {
 
 /** Initial Spacing needs to be larger */
 .starter-spacer-section {
-  margin-bottom: 250px;
+  margin-bottom: 130px;
 }
 
 /** Spacing */
@@ -262,12 +264,14 @@ body {
   }
 
   .navbar-nav {
-    flex-direction: column; 
-    text-align: center; 
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .navbar-nav .nav-item {
-    margin-bottom: 10px;
+    flex: 0 0 auto;
+    padding: 0 10px;
   }
 }
 
