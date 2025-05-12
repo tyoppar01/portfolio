@@ -6,7 +6,7 @@ html {
 body {
   background-color: #f9f9f9;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
   padding-top: 100px; 
 }
 
@@ -112,12 +112,6 @@ body {
 
 .scroll-to-about:hover {
   color: #007bff;
-}
-
-body {
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 20px;
 }
 
 .section {
@@ -357,22 +351,28 @@ iframe {
     left: -15px;
 }
 
-/* Responsive Design - Adapt layout for smaller screens */
 @media (max-width: 768px) {
-  
-  .section-title-header {
-    font-size: 1.5em; /* Adjust title size on smaller screens */
+  .project-card {
+    flex-direction: column;
+    max-width: 100%;
   }
 
-  .navbar {
-    padding: 10px 15px;
+  .image-frame {
+    max-width: 100%;
+    max-height: none;
   }
 
-  .navbar-brand, .nav-link {
-    font-size: 14px;
+  .work-container {
+    width: 90%;
+    left: 5% !important;
   }
 
-  body {
-    padding-top: 60px; /* Smaller space if navbar shrinks */
+  .work-timeline::after {
+    left: 10px;
+  }
+
+  .work-left-container-arrow,
+  .work-right-container-arrow {
+    display: none;
   }
 }
