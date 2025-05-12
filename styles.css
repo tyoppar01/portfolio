@@ -1,15 +1,22 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* adjust to match your navbar height */
+  scroll-padding-top: 80px; /* Adjust this value to fit your navbar height */
 }
 
-/** typed text */
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; 
+}
+
+/** Typed Text */
 .typed-text {
   font-size: 3rem;
   font-weight: bold;
   font-family: monospace;
   color: #3498db;
-  background: linear-gradient(90deg, #000000);
+  background: linear-gradient(90deg, #3498db, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
@@ -18,6 +25,7 @@ html {
   padding-right: 4px;
   animation: blink-caret 0.75s step-end infinite;
   vertical-align: top;
+  transition: background 0.5s ease-in-out;
 }
 
 .intro-greeting {
@@ -29,107 +37,28 @@ html {
 
 .navbar {
   position: fixed;
-  top: 0; /* Stick to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Take full width of the page */
-  z-index: 1000; /* Ensure it stays on top of other content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-/** nav bar */
-.nav-link {
-  color: #ffffff !important;
+.navbar a.nav-link {
+  color: #fff;
 }
 
-/** nav bar hover */
-.nav-link:hover {
-  color: #bbbbbb !important;
+.navbar a.nav-link:hover {
+  color: #bbbbbb;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-/** sub header */
-.sub-heading {
-  position: fixed;
-  bottom: 50px;
-  left: 20px;
-  width: auto;
-  color: black;
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: linear-gradient(#000000);
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.3s ease;
-}
-
-/** sub header hover */
-.sub-heading-deprecated:hover {
-  color: #fff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background: none;
-}
-
-/* Initially hide the About section */
-#about-section {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s ease, visibility 1s ease;
-}
-
-/* When section is in view */
-#about-section.visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*                                                                */
-
-/* Social Icon Styles */
-.social-icon {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 50%;
-  color: #333;
-  font-size: 3rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.starter-section {
-  padding: 40px 0;
-  /* background-color: #f8f9fa; /* Optional: light background */
-  border-radius: 8px;
-  margin-bottom: 20%;
-  margin-top: 10%;
-}
-
-.spacer-section {
-  margin-bottom: 20%;
-  margin-top: 20%;
-}
-
-.small-spacer-section {
-  margin-bottom: 10%;
-  margin-top: 10%;
-}
-
-.smaller-spacer-section {
-  margin-bottom: 5%;
-  margin-top: 5%;
 }
 
 .section {
   background-color: #f8f9fa;
   border-radius: 8px;
-  height: 100vh;
-}
-
-.last-section {
-  /* background-color: #f8f9fa;  */
-  border-radius: 8px;
-  height: 20%;
+  height: auto;
+  padding: 40px;
+  margin-bottom: 20%;
 }
 
 .section-title {
@@ -137,13 +66,6 @@ html {
   font-weight: bold;
   margin-bottom: 30px;
   color: #2c0b0e;
-}
-
-.section p {
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-  text-align: justify;
 }
 
 .section-title-header {
@@ -159,6 +81,22 @@ html {
   text-align: center;
 }
 
+.social-icon {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: #333;
+  font-size: 3rem;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 10px;
+}
+
+.spacer-section, .small-spacer-section, .smaller-spacer-section {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
 .certificate-img {
   width: 100%;
   height: 100%;
@@ -167,8 +105,24 @@ html {
   margin-top: 25px;
 }
 
+.scroll-to-about {
+  display: inline-block;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.scroll-to-about:hover {
+  color: #007bff;
+}
+
 body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 20px;
+}
+
+.section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  height: auto;
 }
