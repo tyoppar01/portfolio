@@ -287,7 +287,7 @@ iframe {
 .work-container img{
     position: absolute;
     top:32px;
-    left:-20px;
+    right: 95%;
     width: 40px;
     border-radius: 50%;
     border:3px solid #212529;     
@@ -361,12 +361,16 @@ iframe {
   }
 
   .navbar-nav {
-    flex-direction: column; /* Stack items in a column on small screens */
-    text-align: center; /* Center align the links */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .navbar-nav .nav-item {
-    margin-bottom: 10px; /* Add spacing between items */
+    margin-bottom: 10px;
   }
 
+  .work-timeline::before {
+    animation: extendLine 0s infinite ease-in-out;
+  }
+  
 }
