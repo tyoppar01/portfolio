@@ -27,6 +27,13 @@ body {
   height: 100%;
 }
 
+.slideshow-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: opacity 0.5s ease;
+}
+
 .project-info {
   flex: 2;
   padding: 20px;
@@ -34,28 +41,30 @@ body {
 
 .project-title {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .project-description {
   color: #333;
   margin: 15px 0;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
+  text-align: justify;
 }
 
 .skills-used {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
+  font-weight: bold;
 }
 
 .skills-used li {
-  background: #e0e0e0;
-  padding: 6px 12px;
+  padding: 6px 8px;
   border-radius: 4px;
   font-size: 14px;
+  background: #3498db;
 }
 
 .hidden {
