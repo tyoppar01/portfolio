@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(card);
   });
 
+
+  // not in used - below
+
   // Enlarge image modal
   const modal = document.getElementById("image-modal");
   const modalImg = document.getElementById("modal-img");
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// not in used - below
+
 
 const slideshowImages = [
   "/project-image/deception-detection-system-screenshot.png",
