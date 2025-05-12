@@ -126,3 +126,36 @@ body {
   border-radius: 8px;
   height: auto;
 }
+
+/* Adjust iframe layout */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 450px; /* or use a dynamic height if needed */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Scroll to section styling */
+.scroll-to-about i {
+  transition: transform 0.3s;
+}
+
+.scroll-to-about:hover i {
+  transform: scale(1.2);
+}
+
+/* Responsive Design - Adapt layout for smaller screens */
+@media (max-width: 768px) {
+  .iframe-container {
+    height: 300px; /* Adjust iframe height for smaller screens */
+  }
+
+  .section-title-header {
+    font-size: 1.5em; /* Adjust title size on smaller screens */
+  }
+}
