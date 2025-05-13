@@ -1,4 +1,4 @@
-const titleArr = ["Kai Le Aw", "Monash CS", "Software Dev"];
+const titleArr = ["Kai Le Aw", "Monash CS", "Developer"];
 document.addEventListener("DOMContentLoaded", function () {
   new Typed(".typed-text", {
     strings: titleArr,
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const connectArr = ["Contact?", "Connect?", "Let's connect :D"];
+const connectArr = ["Let's?", "Connect", ":D"];
 document.addEventListener("DOMContentLoaded", function () {
   new Typed(".contact-text", {
     strings: connectArr,
