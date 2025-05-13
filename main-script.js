@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const connectArr = ["Let's?", "Connect", ":D"];
+const connectArr = ["Let's", "Connect", ":D"];
 document.addEventListener("DOMContentLoaded", function () {
   new Typed(".contact-text", {
     strings: connectArr,
