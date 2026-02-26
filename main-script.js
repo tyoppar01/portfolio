@@ -1,4 +1,4 @@
-const titleArr = ["Kai Le Aw", "Monash CS", "Developer"];
+const titleArr = ["Jasper Aw", "Monashian", "S.E."];
 document.addEventListener("DOMContentLoaded", function () {
   new Typed(".typed-text", {
     strings: titleArr,
